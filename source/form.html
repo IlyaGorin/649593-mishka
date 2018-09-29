@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма заказа товара</title>
+</head>
+<body>
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img src="http://placehold.it/150x100" alt="Логотип" class="page-header__logo-img"
+        width="" height="">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">
+            Каталог товаров
+          </a>
+          <a href="#" class="site-list__link">
+            Вязание на заказ
+          </a>
+          <a href="#" class="site-list__link site-list__link--search">
+            Поиск по сайту
+          </a>
+          <a href="#" class="site-list__link site-list__link--basket">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="form-promo">
+      <h2 class="form-promo__title">Вязание на заказ</h2>
+    </section>
+    <section class="form">
+      <h2 class="visually-hidden">Форма заказа</h2>
+      <p class="form__text form-text">
+        Мы будем рады воплотить в жизнь ваши пожелания!
+        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="order-form">
+        <fieldset class="order-form__radiobutton radiobutton-group">
+          <legend class="radiobutton-group__title fieldset-title">тип</legend>
+          <ul class="radiobutton-group__list radiobutton-list">
+            <li class="radiobutton-list__item">
+              <input type="radio" name="type" value="interior-accessory" id="accessory" class="radiobutton-list__input">
+              <label for="accessory" class="radiobutton-list__label">Аксессуар для интерьера</label>
+            </li>
+            <li class="radiobutton-list__item">
+              <input type="radio" name="type" value="toy" id="toy-id" class="radiobutton-list__input">
+              <label for="toy-id" class="radiobutton-list__label">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__checkbox checkbox-group">
+          <legend class="checkbox-group__title fieldset-title">цвет</legend>
+          <ul class="checkbox-group__list checkbox-list">
+            <li class="checkbox-list__item">
+              <input type="checkbox" name="color-white" value="white" id="white-id" class="checkbox-list__input" checked>
+              <label for="white-id" class="checkbox__label">Белый</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="checkbox" name="color-gray" value="gray" id="gray-id" class="checkbox-list__input" checked>
+              <label for="gray-id" class="checkbox__label">Серый</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="checkbox" name="color-tiffany" value="tiffany" id="tiffany-id" class="checkbox-list__input">
+              <label for="tiffany-id" class="checkbox__label">&#171;Тиффани&#187;</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="checkbox" name="color-black" value="black" id="black-id" class="checkbox-list__input">
+              <label for="black-id" class="checkbox__label">Черный</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="checkbox" name="color-pink" value="pink" id="pink-id" class="checkbox-list__input">
+              <label for="pink-id" class="checkbox__label">Розовый</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="checkbox" name="color-orange" value="orange" id="orange-id" class="checkbox-list__input">
+              <label for="orange-id" class="checkbox__label">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__information information">
+          <legend class="information__title fieldset-title">фио</legend>
+          <p class="information__item">
+            <label for="username-id" class="information__label">Имя:</label>
+            <input type="text" name="username" id="username-id" class="information__input" placeholder="Введите ваше имя*">
+          </p>
+          <p class="information__item">
+            <label for="surname-id" class="information__label">Фамилия:</label>
+            <input type="text" name="surname" id="surname-id" class="information__input" placeholder="Укажите фамилию*">
+          </p>
+          <p class="information__item">
+            <label for="patronymic-id" class="information__label">Отчество:</label>
+            <input type="text" name="patronymic" id="patronymic-id" class="information__input" placeholder="Отчество, если желаете">
+          </p>
+        </fieldset>
+        <fieldset class="order-form__phone phone">
+          <legend class="phone__title fieldset-title">тел</legend>
+          <p class="phone__item">
+            <label for="phone-id" class="visually-hidden">Телефон</label>
+            <input type="tel" name="phone" id="phone-id" class="phone__input" placeholder="+7 XXX XXX XX XX*">
+          </p>
+        </fieldset>
+        <fieldset class="order-form__email email">
+          <legend class="email__title fieldset-title">e-mail</legend>
+          <p class="email__item">
+            <label for="email-id" class="visually-hidden">Электронная почта</label>
+            <input type="email" name="email" id="email-id" class="email__input" placeholder="Ваш Email*">
+          </p>
+        </fieldset>
+        <fieldset class="order-form__details details">
+          <legend class="details__title fieldset-title">доп</legend>
+          <p class="details__item">
+            <label for="text-id" class="visually-hidden">Коментарии и пожелания</label>
+            <textarea name="text" id="text-id" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </p>
+        </fieldset>
+        <p class="order-form__desc">*Поля обязательные для заполнения</p>
+        <button type="submit" class="order-form__btn btn">Отправить заказ</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a href="#" class="social__link visually-hidden social__link--instagram">Инстаграм</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link visually-hidden social__link--facebook">Фейсбук</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link visually-hidden social__link--twitter">Твиттер</a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="http://placehold.it/150x100" alt="Логотип htmlacademy" width="" height="">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
