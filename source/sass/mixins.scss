@@ -1,0 +1,33 @@
+//Шрифты
+@mixin font-regular {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-bold {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+// Сброс стилей для списков
+
+@mixin list-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+//Кнопки
+
+@mixin button {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $text;
+
+  border: 2px solid $text;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}

@@ -1,0 +1,12 @@
+.site-list {
+  @include list-style;
+}
+
+.site-list__link {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  text-decoration: none;
+}

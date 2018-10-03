@@ -1,0 +1,27 @@
+.contacts {
+  @include font-regular;
+  font-size: 15px;
+  line-height: 30px;
+  color: $text;
+}
+
+.contacts__title {
+  margin: 0;
+
+  @include font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts__email {
+  margin: 0;
+}
+
+.contacts__email span {
+  border-bottom: 1px solid $green;
+}
+
+.contacts__address {
+  margin: 0;
+}

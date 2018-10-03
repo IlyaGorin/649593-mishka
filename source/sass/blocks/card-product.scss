@@ -1,0 +1,26 @@
+.card-product__title {
+  margin: 0;
+
+  @include font-bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $green;
+
+  text-transform: uppercase;
+}
+
+.card-product__desc {
+  margin: 0;
+
+  @include font-regular;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text;
+}
+
+.card-product__price {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $text;
+}
