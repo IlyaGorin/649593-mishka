@@ -12,9 +12,8 @@
   color: #000000;
 }
 
-.about__list{
+.about__list {
   @include list-style;
-
   @include font-bold;
   font-size: 17px;
   line-height: 20px;
