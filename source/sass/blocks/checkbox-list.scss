@@ -1,0 +1,10 @@
+.checkbox-list {
+  @include list-style;
+}
+
+.checkbox-list__label {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}

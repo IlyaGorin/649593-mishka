@@ -31,3 +31,11 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+// Центровщик
+
+@mixin mobile-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+

@@ -1,8 +1,19 @@
 .site-list {
   @include list-style;
+
+  border-top: 1px solid $border;
+}
+
+.site-list__item {
+  border-bottom: 1px solid $border;
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 65px;
+
   @include font-bold;
   font-size: 17px;
   line-height: 20px;
