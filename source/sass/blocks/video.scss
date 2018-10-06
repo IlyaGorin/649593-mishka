@@ -5,14 +5,14 @@
 
 .video__title {
   @include font-bold;
-  font-size: 17px;
+  font-size: $fs-title--smaller;
   line-height: 24px;
-  color: #000000;
+  color: $title-black;
 }
 
 .video__desc {
   @include font-regular;
-  font-size: 13px;
+  font-size: $fs-text--small;
   line-height: 24px;
-  color: $text;
+  color: $text-dark;
 }

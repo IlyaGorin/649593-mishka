@@ -4,7 +4,7 @@
 
 .information__label {
   @include font-bold;
-  font-size: 17px;
+  font-size: $fs-text;
   line-height: 18px;
-  color: #000000;
+  color: $text-black;
 }

@@ -3,17 +3,12 @@
   margin-top: auto;
 }
 
-// .promo-list__item {
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-// }
-
 .promo-list__item--interior {
-  background-color: $green;
+  background-color: $bg-green;
 }
 
 .promo-list__item--toys {
-  background-color: #56c3b2;
+  background-color: $bg-dark-green;
 }
 
 .promo-list__link {
@@ -24,9 +19,9 @@
   width: 110px;
 
   @include font-bold;
-  font-size: 19px;
+  font-size: $fs-text--big;
   line-height: 24px;
-  color: #ffffff;
+  color: $text-white;
 
   text-decoration: none;
 }

@@ -3,18 +3,18 @@
   margin: 0 auto;
 
   @include font-regular;
-  font-size: 15px;
+  font-size: $fs-main;
   line-height: 30px;
-  color: $text;
+  color: $text-dark;
 }
 
 .contacts__title {
   margin: 0;
 
   @include font-bold;
-  font-size: 18px;
+  font-size: $fs-title--small;
   line-height: 30px;
-  color: #000000;
+  color: $title-black;
 }
 
 .contacts__email {
@@ -22,7 +22,7 @@
 }
 
 .contacts__email span {
-  border-bottom: 1px solid $green;
+  border-bottom: 1px solid $bg-green;
 }
 
 .contacts__address {

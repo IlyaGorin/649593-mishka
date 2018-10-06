@@ -2,7 +2,7 @@
   margin: 0;
 
   @include font-bold;
-  font-size: 19px;
+  font-size: $fs-text--big;
   line-height: 18px;
-  color: #000000;
+  color: $text-black;
 }
