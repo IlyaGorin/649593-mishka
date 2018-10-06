@@ -1,3 +1,5 @@
 .page-footer {
   @include mobile-wrapper;
+  display: flex;
+  flex-direction: column;
 }

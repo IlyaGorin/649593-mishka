@@ -1,5 +1,12 @@
+.card-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card-product__title {
   margin: 0;
+  margin-bottom: 30px;
 
   @include font-bold;
   font-size: 17px;
@@ -11,6 +18,7 @@
 
 .card-product__desc {
   margin: 0;
+  margin-bottom: 30px;
 
   @include font-regular;
   font-size: 15px;
@@ -18,9 +26,25 @@
   color: $text;
 }
 
+.card-product__list {
+  margin-bottom: 28px;
+}
+
 .card-product__price {
+  margin: 0;
+  margin-bottom: 28px;
+
   @include font-bold;
   font-size: 17px;
   line-height: 24px;
   color: $text;
+}
+
+.card-product__img {
+  margin-bottom: 30px;
+}
+
+.card-product__btn {
+  align-self: stretch;
+  text-align: center;
 }

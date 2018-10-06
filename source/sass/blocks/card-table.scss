@@ -1,8 +1,18 @@
 .card-table {
+  width: 100%;
+
   @include font-regular;
   font-size: 15px;
   line-height: 20px;
   color: $text;
 
   border-collapse: collapse;
+}
+
+.card-table tr {
+  border-bottom: 1px solid $border;
+}
+
+.card-table__field {
+  width: 95px;
 }

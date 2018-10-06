@@ -5,6 +5,8 @@
 
 .about__title {
   margin: 0;
+  margin-bottom: 90px;
+  padding-top: 35px;
 
   @include font-bold;
   font-size: 25px;
@@ -13,9 +15,21 @@
 }
 
 .about__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   @include list-style;
   @include font-bold;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
+}
+
+.about__item {
+  margin-bottom: 85px;
+
+  &:last-child {
+    margin-bottom: 65px;
+  }
 }
