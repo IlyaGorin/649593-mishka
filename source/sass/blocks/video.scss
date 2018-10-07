@@ -1,0 +1,18 @@
+.video {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.video__title {
+  @include font-bold;
+  font-size: $fs-title--smaller;
+  line-height: 24px;
+  color: $title-black;
+}
+
+.video__desc {
+  @include font-regular;
+  font-size: $fs-text--small;
+  line-height: 24px;
+  color: $text-dark;
+}

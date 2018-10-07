@@ -1,0 +1,10 @@
+.information {
+  border: none;
+}
+
+.information__label {
+  @include font-bold;
+  font-size: $fs-text;
+  line-height: 18px;
+  color: $text-black;
+}

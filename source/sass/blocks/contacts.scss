@@ -1,0 +1,30 @@
+.contacts {
+  width: 270px;
+  margin: 0 auto;
+
+  @include font-regular;
+  font-size: $fs-main;
+  line-height: 30px;
+  color: $text-dark;
+}
+
+.contacts__title {
+  margin: 0;
+
+  @include font-bold;
+  font-size: $fs-title--small;
+  line-height: 30px;
+  color: $title-black;
+}
+
+.contacts__email {
+  margin: 0;
+}
+
+.contacts__email span {
+  border-bottom: 1px solid $bg-green;
+}
+
+.contacts__address {
+  margin: 0;
+}

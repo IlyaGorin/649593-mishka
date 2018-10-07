@@ -1,0 +1,27 @@
+.post__item {
+  margin: 0;
+}
+
+.post__text {
+  margin: 0;
+
+  @include font-regular;
+  font-size: $fs-main;
+  line-height: 30px;
+  color: $text-dark;
+}
+
+.post__user-name {
+  @include font-bold;
+  font-size: $fs-text;
+  line-height: 24px;
+  color: $text-black;
+  font-style: normal;
+}
+
+.post__user-name a {
+  @include font-regular;
+  color: $text-dark;
+
+  text-decoration: none;
+}

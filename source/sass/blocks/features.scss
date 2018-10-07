@@ -1,0 +1,18 @@
+.features {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.features__title {
+  margin: 0;
+
+  @include font-bold;
+  font-size: $fs-title;
+  line-height: 30px;
+  color: $title-black;
+}
+
+.features__wrapper {
+  width: 270px;
+  margin: 0 auto;
+}

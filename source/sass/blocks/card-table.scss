@@ -1,0 +1,8 @@
+.card-table {
+  @include font-regular;
+  font-size: $fs-main;
+  line-height: 20px;
+  color: $text-dark;
+
+  border-collapse: collapse;
+}

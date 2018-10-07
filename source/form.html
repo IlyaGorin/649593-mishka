@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Форма заказа товара</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -11,18 +12,24 @@
         width="" height="">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="#" class="site-list__link">
+          <a href="catalog.html" class="site-list__link">
             Каталог товаров
           </a>
-          <a href="#" class="site-list__link">
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link">
             Вязание на заказ
           </a>
+        </li>
+        <li class="site-list__item">
           <a href="#" class="site-list__link site-list__link--search">
             Поиск по сайту
           </a>
+        </li>
+        <li class="site-list__item">
           <a href="#" class="site-list__link site-list__link--basket">
             Корзина: пока пуста
           </a>
@@ -32,8 +39,8 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Форма заказа магазина Мишка</h1>
-    <section class="promo">
-      <h2 class="promo__title promo__title--background">Вязание на заказ</h2>
+    <section class="promo promo--background">
+      <h2 class="promo__title">Вязание на заказ</h2>
     </section>
     <section class="form">
       <h2 class="visually-hidden">Форма заказа</h2>
@@ -60,27 +67,27 @@
           <ul class="checkbox-group__list checkbox-list">
             <li class="checkbox-list__item">
               <input type="checkbox" name="color-white" value="white" id="white-id" class="checkbox-list__input" checked>
-              <label for="white-id" class="checkbox__label">Белый</label>
+              <label for="white-id" class="checkbox-list__label">Белый</label>
             </li>
             <li class="checkbox-list__item">
               <input type="checkbox" name="color-gray" value="gray" id="gray-id" class="checkbox-list__input" checked>
-              <label for="gray-id" class="checkbox__label">Серый</label>
+              <label for="gray-id" class="checkbox-list__label">Серый</label>
             </li>
             <li class="checkbox-list__item">
               <input type="checkbox" name="color-tiffany" value="tiffany" id="tiffany-id" class="checkbox-list__input">
-              <label for="tiffany-id" class="checkbox__label">&#171;Тиффани&#187;</label>
+              <label for="tiffany-id" class="checkbox-list__label">&#171;Тиффани&#187;</label>
             </li>
             <li class="checkbox-list__item">
               <input type="checkbox" name="color-black" value="black" id="black-id" class="checkbox-list__input">
-              <label for="black-id" class="checkbox__label">Черный</label>
+              <label for="black-id" class="checkbox-list__label">Черный</label>
             </li>
             <li class="checkbox-list__item">
               <input type="checkbox" name="color-pink" value="pink" id="pink-id" class="checkbox-list__input">
-              <label for="pink-id" class="checkbox__label">Розовый</label>
+              <label for="pink-id" class="checkbox-list__label">Розовый</label>
             </li>
             <li class="checkbox-list__item">
               <input type="checkbox" name="color-orange" value="orange" id="orange-id" class="checkbox-list__input">
-              <label for="orange-id" class="checkbox__label">Оранжевый</label>
+              <label for="orange-id" class="checkbox-list__label">Оранжевый</label>
             </li>
           </ul>
         </fieldset>

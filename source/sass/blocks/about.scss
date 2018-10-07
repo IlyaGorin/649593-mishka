@@ -1,0 +1,21 @@
+.about {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.about__title {
+  margin: 0;
+
+  @include font-bold;
+  font-size: $fs-title;
+  line-height: 30px;
+  color: $title-black;
+}
+
+.about__list {
+  @include list-style;
+  @include font-bold;
+  font-size: $fs-text;
+  line-height: 20px;
+  color: $text-black;
+}

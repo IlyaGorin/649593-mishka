@@ -1,0 +1,8 @@
+.copyright__text {
+  margin: 0;
+
+  @include font-bold;
+  font-size: $fs-text--big;
+  line-height: 18px;
+  color: $text-black;
+}
