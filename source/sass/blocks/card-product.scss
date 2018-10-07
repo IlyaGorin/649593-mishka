@@ -9,9 +9,9 @@
   margin-bottom: 30px;
 
   @include font-bold;
-  font-size: 17px;
+  font-size: $fs-title--smaller;
   line-height: 20px;
-  color: $green;
+  color: $title-green;
 
   text-transform: uppercase;
 }
@@ -21,9 +21,9 @@
   margin-bottom: 30px;
 
   @include font-regular;
-  font-size: 15px;
+  font-size: $fs-main;
   line-height: 24px;
-  color: $text;
+  color: $text-dark;
 }
 
 .card-product__list {
@@ -35,9 +35,9 @@
   margin-bottom: 28px;
 
   @include font-bold;
-  font-size: 17px;
+  font-size: $fs-text;
   line-height: 24px;
-  color: $text;
+  color: $text-dark;
 }
 
 .card-product__img {

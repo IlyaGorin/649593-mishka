@@ -9,9 +9,9 @@
   padding-top: 30px;
 
   @include font-bold;
-  font-size: 25px;
+  font-size: $fs-title;
   line-height: 30px;
-  color: #000000;
+  color: $title-black;
 }
 
 .features__wrapper {

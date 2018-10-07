@@ -2,9 +2,9 @@
   width: 100%;
 
   @include font-regular;
-  font-size: 15px;
+  font-size: $fs-main;
   line-height: 20px;
-  color: $text;
+  color: $text-dark;
 
   border-collapse: collapse;
 }

@@ -1,8 +1,8 @@
 .fieldset-title {
   @include font-bold;
-  font-size: 17px;
+  font-size: $fs-title--smaller;
   line-height: 16px;
-  color: $green;
+  color: $title-green;
 
   text-transform: uppercase;
 }

@@ -24,9 +24,9 @@
   @include font-bold;
   font-size: 17px;
   line-height: 20px;
-  color: $text;
+  color: $text-dark;
 
-  border: 2px solid $text;
+  border: 2px solid $text-dark;
 
   text-decoration: none;
   text-transform: uppercase;

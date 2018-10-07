@@ -9,9 +9,9 @@
   padding-top: 35px;
 
   @include font-bold;
-  font-size: 25px;
+  font-size: $fs-title;
   line-height: 30px;
-  color: #000000;
+  color: $title-black;
 }
 
 .about__list {
@@ -21,9 +21,9 @@
 
   @include list-style;
   @include font-bold;
-  font-size: 17px;
+  font-size: $fs-text;
   line-height: 20px;
-  color: #000000;
+  color: $text-black;
 }
 
 .about__item {
