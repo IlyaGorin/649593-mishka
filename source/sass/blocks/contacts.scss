@@ -20,12 +20,19 @@
   color: $title-black;
 }
 
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__email {
   margin: 0;
   margin-bottom: 35px;
 }
 
 .contacts__email span {
+  margin-left: 35px;
+
   border-bottom: 1px solid $bg-green;
 }
 
@@ -35,4 +42,28 @@
 
 .contacts__btn {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    @include tablet-wrapper;
+  }
+
+  .contacts__title {
+    font-size: $fs-title-tablet--big;
+    line-height: 50px;
+  }
+
+  .contacts__info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__address {
+    margin-left: 55px;
+  }
+
+  .contacts__btn {
+    align-self: center;
+  }
 }

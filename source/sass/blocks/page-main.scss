@@ -1,3 +1,9 @@
 .page-main {
   @include mobile-wrapper;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    @include tablet-wrapper;
+  }
+}

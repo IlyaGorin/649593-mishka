@@ -1,0 +1,10 @@
+@media (min-width: $tablet-width) {
+  .map {
+    min-height: 457px;
+
+    background-color: #e9e4da;
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

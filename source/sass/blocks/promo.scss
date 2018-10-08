@@ -16,10 +16,7 @@
 
 .promo__title {
   width: 245px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 120px;
+  margin: 0 auto;
   padding: 0;
 
   @include font-bold;
@@ -32,4 +29,24 @@
 
 .promo__list {
   margin-top: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    min-height: 745px;
+    // margin-top: -70px;
+
+    background-color: $bg-gray;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    border-top: 1px solid $border;
+
+  }
+
+  .promo__title {
+    width: 620px;
+    margin: 0 auto;
+
+    font-size: $fs-title-tablet--big;
+    line-height: 50px;
+  }
 }

@@ -1,6 +1,9 @@
 .video {
   width: 270px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .video__title {
@@ -15,4 +18,8 @@
   font-size: $fs-text--small;
   line-height: 24px;
   color: $text-dark;
+}
+
+.video__btn {
+  text-align: center;
 }

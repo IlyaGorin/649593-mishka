@@ -4,18 +4,6 @@
   align-items: center;
 }
 
-.card-product__title {
-  margin: 0;
-  margin-bottom: 30px;
-
-  @include font-bold;
-  font-size: $fs-title--smaller;
-  line-height: 20px;
-  color: $title-green;
-
-  text-transform: uppercase;
-}
-
 .card-product__desc {
   margin: 0;
   margin-bottom: 30px;
@@ -40,11 +28,13 @@
   color: $text-dark;
 }
 
-.card-product__img {
-  margin-bottom: 30px;
-}
-
 .card-product__btn {
   align-self: stretch;
   text-align: center;
+}
+
+@media (min-width: $tablet-width)  {
+  .card-product {
+    width: 255px;
+  }
 }

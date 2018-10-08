@@ -2,4 +2,23 @@
   @include mobile-wrapper;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  background-color: $bg-gray;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    @include tablet-wrapper;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
 }

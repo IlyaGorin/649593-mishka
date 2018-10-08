@@ -33,3 +33,31 @@
     margin-bottom: 65px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .about__title {
+    font-size: $fs-title-tablet--big;
+    line-height: 50px;
+  }
+
+  .about__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    font-size: $fs-text-tablet;
+    line-height: 22px;
+  }
+
+  .about__item {
+    width: 305px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}

@@ -16,7 +16,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
-  width: 110px;
+  // width: 110px;
 
   @include font-bold;
   font-size: $fs-text--big;
@@ -24,4 +24,14 @@
   color: $text-white;
 
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-list {
+    display: flex;
+  }
+
+  .promo-list__item {
+    flex-grow: 1;
+  }
 }

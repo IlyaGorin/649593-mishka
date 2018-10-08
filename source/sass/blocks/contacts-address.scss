@@ -3,5 +3,17 @@
 }
 
 .contacts-address__desc {
+  width: 150px;
+  margin: 0;
   margin-left: 35px;
+}
+
+.contacts-address__text {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-address__desc {
+    width: 180px;
+  }
 }
