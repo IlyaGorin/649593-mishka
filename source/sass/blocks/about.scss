@@ -36,8 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    width: 668px;
-    margin: 0 auto;
+    @include tablet-content-wrapper;
   }
 
   .about__title {
@@ -59,5 +58,21 @@
     &:nth-child(odd) {
       margin-right: 30px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    @include desktop-wrapper;
+  }
+
+  .about__title {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .about__list {
+    width: 700px;
+    margin: 0 auto;
   }
 }

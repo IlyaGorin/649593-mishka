@@ -2,3 +2,44 @@
   display: flex;
   flex-direction: column;
 }
+
+.order-form__btn {
+  background-color: $text-white;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    @include tablet-content-wrapper;
+  }
+
+  .order-form__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .order-form__btn {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form {
+    width: auto;
+  }
+
+  .order-form__radiobutton {
+    @include desktop-content-wrapper;
+  }
+
+  .order-form__information {
+    @include desktop-content-wrapper;
+  }
+
+  .order-form__details {
+    @include desktop-content-wrapper;
+  }
+
+  .order-form__container {
+    @include desktop-content-wrapper;
+  }
+}

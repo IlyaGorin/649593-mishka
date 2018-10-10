@@ -29,9 +29,20 @@
 @media (min-width: $tablet-width) {
   .promo-list {
     display: flex;
+    width: 668px;
+    margin: 0 auto;
+    margin-top: auto;
   }
 
   .promo-list__item {
     flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-list {
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: auto;
   }
 }

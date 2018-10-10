@@ -1,3 +1,35 @@
 .catalog-list {
   @include list-style;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    @include tablet-content-wrapper;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-list__item {
+    display: flex;
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    @include desktop-content-wrapper;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog-list__item {
+    width: 315px;
+    margin: 0;
+    flex-direction: column;
+  }
+}

@@ -8,3 +8,15 @@
   line-height: 18px;
   color: $text-black;
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+  }
+
+  .checkbox-list__item {
+    width: 205px;
+  }
+}

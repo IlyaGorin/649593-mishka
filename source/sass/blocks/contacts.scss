@@ -49,6 +49,10 @@
     @include tablet-wrapper;
   }
 
+  .contacts__wrapper {
+    @include tablet-content-wrapper;
+  }
+
   .contacts__title {
     font-size: $fs-title-tablet--big;
     line-height: 50px;
@@ -65,5 +69,37 @@
 
   .contacts__btn {
     align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    @include desktop-wrapper;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 105px;
+    padding-right: 50px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    margin: 0;
+    margin-left: 200px;
+  }
+
+  .contacts__info {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    margin-left: auto;
+  }
+
+  .contacts__btn {
+    margin-top: -30px;
+    margin-left: 200px;
   }
 }

@@ -23,3 +23,58 @@
 .video__btn {
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .video {
+    @include tablet-content-wrapper;
+  }
+
+  .video__title {
+    order: 2;
+  }
+
+  .video__img {
+    order: 1;
+  }
+
+  .video__desc {
+    order: 3;
+  }
+
+  .video__btn {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    position: relative;
+
+    @include desktop-content-wrapper;
+    min-height: 455px;
+    align-items: flex-end;
+  }
+
+  .video__title {
+    width: 230px;
+    margin-right: 30px;
+  }
+
+  .video__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 682px;
+  }
+
+  .video__desc {
+    width: 230px;
+    margin-right: 30px;
+  }
+
+  .video__btn {
+    margin-right: 75px;
+  }
+}

@@ -4,7 +4,15 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-   @include tablet-wrapper;
-   display: flex;
+    @include tablet-wrapper;
+    display: flex;
+    height: 88px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include desktop-wrapper;
   }
 }

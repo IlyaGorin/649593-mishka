@@ -1,3 +1,15 @@
-.checkbox-group {
-  border: none;
+@media (min-width: $tablet-width) {
+  .checkbox-group {
+    background-color: $bg-gray;
+  }
+
+  .checkbox-group__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox-group__wrapper {
+    @include desktop-content-wrapper;
+  }
 }

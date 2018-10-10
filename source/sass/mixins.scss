@@ -43,3 +43,18 @@
   width: 768px;
   margin: 0 auto;
 }
+
+@mixin tablet-content-wrapper {
+  width: 668px;
+  margin: 0 auto;
+}
+
+@mixin desktop-wrapper {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+@mixin desktop-content-wrapper {
+  width: 1050px;
+  margin: 0 auto;
+}

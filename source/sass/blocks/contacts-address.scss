@@ -17,3 +17,9 @@
     width: 180px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-address {
+    margin: 0;
+  }
+}

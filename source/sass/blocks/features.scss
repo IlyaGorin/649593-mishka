@@ -71,3 +71,40 @@
     order: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    position: relative;
+
+    width: 1050px;
+  }
+
+  .features__title {
+    z-index: 10;
+
+    width: 70%;
+    order: 2;
+    margin-left: 55px;
+    margin-top: 130px;
+  }
+
+  .features__sub-title {
+    order: 1;
+    margin: 0;
+    width: 7%;
+    margin-left: 45px;
+    margin-top: 140px;
+  }
+
+  .features__card-product {
+    margin-left: 175px;
+    order: 3;
+  }
+
+  .features__img {
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 120px;
+  }
+}

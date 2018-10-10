@@ -7,3 +7,9 @@
     @include tablet-wrapper;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: auto;
+  }
+}

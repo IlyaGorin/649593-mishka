@@ -1,4 +1,6 @@
 .fieldset-title {
+  margin: 0;
+
   @include font-bold;
   font-size: $fs-title--smaller;
   line-height: 16px;

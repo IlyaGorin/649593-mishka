@@ -1,10 +1,13 @@
 .page-footer {
   @include mobile-wrapper;
+
+  background-color: $bg-gray;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: $bg-gray;
 }
 
 .page-footer__logo {
@@ -14,11 +17,24 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     @include tablet-wrapper;
+  }
+
+  .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-around;
   }
 
   .page-footer__logo {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: auto;
+  }
+
+  .page-footer__wrappe {
+    @include desktop-content-wrapper;
   }
 }
