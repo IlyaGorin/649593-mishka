@@ -8,3 +8,39 @@
   line-height: 18px;
   color: $text-black;
 }
+
+.information__item {
+  margin: 0;
+}
+
+.information__input {
+  border: none;
+  border-bottom: 2px solid $text-black;
+}
+
+@media (min-width: $tablet-width) {
+  .information {
+    display: flex;
+  }
+
+  .information__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 122px;
+    flex-grow: 1;
+  }
+
+  .information__item {
+    display: flex;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .information__input {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+}

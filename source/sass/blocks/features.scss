@@ -1,10 +1,12 @@
 .features {
   width: 270px;
   margin: 0 auto;
+  padding-bottom: 35px;
 }
 
 .features__title {
   margin: 0;
+  padding-top: 30px;
 
   @include font-bold;
   font-size: $fs-title;
@@ -12,7 +14,97 @@
   color: $title-black;
 }
 
-.features__wrapper {
-  width: 270px;
-  margin: 0 auto;
+.features__sub-title {
+  margin: 0;
+  margin-bottom: 30px;
+  align-self: flex-start;
+
+  @include font-bold;
+  font-size: $fs-title--smaller;
+  line-height: 20px;
+  color: $title-green;
+
+  text-transform: uppercase;
+}
+
+.features__img {
+  margin-bottom: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .features {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__title {
+    padding: 0;
+
+    font-size: $fs-title-tablet--big;
+    line-height: 50px;
+  }
+
+  .features__sub-title {
+    width: 70px;
+    margin: 0;
+    margin-right: 30px;
+    margin-left: auto;
+
+    line-height: 17px;
+
+    text-align: center;
+  }
+
+  .features__img {
+    margin: 0;
+    margin-left: auto;
+
+    align-self: center;
+
+    order: 2;
+  }
+
+  .features__card-product {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    position: relative;
+
+    width: 1050px;
+  }
+
+  .features__title {
+    z-index: 10;
+
+    width: 70%;
+    order: 2;
+    margin-left: 55px;
+    margin-top: 130px;
+  }
+
+  .features__sub-title {
+    order: 1;
+    margin: 0;
+    width: 7%;
+    margin-left: 45px;
+    margin-top: 140px;
+  }
+
+  .features__card-product {
+    margin-left: 175px;
+    order: 3;
+  }
+
+  .features__img {
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 120px;
+  }
 }

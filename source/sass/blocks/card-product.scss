@@ -1,16 +1,12 @@
-.card-product__title {
-  margin: 0;
-
-  @include font-bold;
-  font-size: $fs-title--smaller;
-  line-height: 20px;
-  color: $title-green;
-
-  text-transform: uppercase;
+.card-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-product__desc {
   margin: 0;
+  margin-bottom: 30px;
 
   @include font-regular;
   font-size: $fs-main;
@@ -18,9 +14,27 @@
   color: $text-dark;
 }
 
+.card-product__list {
+  margin-bottom: 28px;
+}
+
 .card-product__price {
+  margin: 0;
+  margin-bottom: 28px;
+
   @include font-bold;
   font-size: $fs-text;
   line-height: 24px;
   color: $text-dark;
+}
+
+.card-product__btn {
+  align-self: stretch;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .card-product {
+    width: 255px;
+  }
 }

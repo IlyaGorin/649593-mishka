@@ -5,6 +5,8 @@
 
 .about__title {
   margin: 0;
+  margin-bottom: 90px;
+  padding-top: 35px;
 
   @include font-bold;
   font-size: $fs-title;
@@ -13,9 +15,64 @@
 }
 
 .about__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   @include list-style;
   @include font-bold;
   font-size: $fs-text;
   line-height: 20px;
   color: $text-black;
+}
+
+.about__item {
+  margin-bottom: 85px;
+
+  &:last-child {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    @include tablet-content-wrapper;
+  }
+
+  .about__title {
+    font-size: $fs-title-tablet--big;
+    line-height: 50px;
+  }
+
+  .about__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    font-size: $fs-text-tablet;
+    line-height: 22px;
+  }
+
+  .about__item {
+    width: 305px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    @include desktop-wrapper;
+  }
+
+  .about__title {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .about__list {
+    width: 700px;
+    margin: 0 auto;
+  }
 }

@@ -1,9 +1,11 @@
 .post__item {
   margin: 0;
+  margin-bottom: 35px;
 }
 
 .post__text {
   margin: 0;
+  margin-bottom: 35px;
 
   @include font-regular;
   font-size: $fs-main;
@@ -24,4 +26,11 @@
   color: $text-dark;
 
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .post__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

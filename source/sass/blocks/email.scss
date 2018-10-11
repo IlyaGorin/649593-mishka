@@ -1,3 +1,28 @@
-.email {
+.email__input {
   border: none;
+  border-bottom: 2px solid $text-black;
+}
+
+@media (min-width: $tablet-width) {
+  .email {
+    background-color: $bg-gray;
+  }
+
+  .email__title {
+    width: 25%;
+  }
+
+  .email__input {
+    width: 75%;
+
+    background-color: $bg-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .email__wrapper {
+    @include desktop-content-wrapper;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

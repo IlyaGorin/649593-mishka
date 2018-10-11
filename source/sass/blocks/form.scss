@@ -9,3 +9,28 @@
   line-height: 24px;
   color: $text-dark;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    @include tablet-wrapper;
+  }
+
+  .form__text {
+    margin-left: 50px;
+    width: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: auto;
+  }
+
+  .form__text {
+    @include desktop-content-wrapper;
+  }
+
+  .form__wrapper {
+    @include desktop-content-wrapper;
+  }
+}

@@ -1,3 +1,5 @@
-.radiobutton-group {
-  border: none;
+@media (min-width: $tablet-width) {
+  .radiobutton-group {
+    display: flex;
+  }
 }

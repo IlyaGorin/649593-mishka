@@ -1,3 +1,33 @@
-.phone {
+.phone__input {
   border: none;
+  border-bottom: 2px solid $text-black;
+}
+
+@media (min-width: $tablet-width) {
+  .phone {
+    background-color: $bg-gray;
+  }
+
+  .phone__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .phone__title {
+    width: 25%;
+  }
+
+  .phone__input {
+    width: 75%;
+
+    background-color: $bg-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .phone__wrapper {
+    @include desktop-content-wrapper;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
