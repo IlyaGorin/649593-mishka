@@ -1,11 +1,53 @@
+.email {
+  padding-top: 11px;
+}
+
+.email__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.email__title {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
 .email__input {
+  width: 100%;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+
+  @include font-regular;
+  font-size: $fs-link;
+  line-height: 18px;
+  color: $text-dark;
+
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 225px -4px;
+
   border: none;
   border-bottom: 2px solid $text-black;
+
+  &:hover {
+    border-color: $bg-green;
+  }
+
+  &:focus {
+    border-color: $bg-green;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .email {
+    padding-bottom: 50px;
+
     background-color: $bg-gray;
+  }
+
+  .email__wrapper {
+    @include tablet-content-wrapper;
+    align-self: baseline;
   }
 
   .email__title {
@@ -13,7 +55,12 @@
   }
 
   .email__input {
+    padding-left: 17px;
+    padding-bottom: 15px;
+    margin: 0;
     width: 75%;
+
+    font-size: $fs-text--big;
 
     background-color: $bg-gray;
   }
@@ -24,5 +71,18 @@
     @include desktop-content-wrapper;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .email__title {
+    margin-left: 63px;
+    margin-bottom: 10px;
+    width: 10%;
+  }
+
+  .email__input {
+    margin-left: 8px;
+    width: 700px;
+
+    background-position: 665px 1px;
   }
 }

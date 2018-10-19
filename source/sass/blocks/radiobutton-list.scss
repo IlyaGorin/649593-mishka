@@ -2,9 +2,95 @@
   @include list-style;
 }
 
+.radiobutton-list__item {
+  display: flex;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .radiobutton-list__label {
+  position: relative;
+
+  padding-left: 63px;
+
   @include font-bold;
   font-size: $fs-text;
   line-height: 18px;
   color: $text-black;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: -8px;
+
+    width: 39px;
+    height: 39px;
+
+    border: 2px solid $text-dark;
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 12px;
+    top: 4px;
+
+    display: none;
+    width: 15px;
+    height: 15px;
+
+    background-color: $bg-green;
+
+    border: 1px solid $bg-green;
+    border-radius: 50%;
+  }
+}
+
+.radiobutton-list__input:hover + .radiobutton-list__label::before {
+  border-color: $bg-green;
+  transition: 0.3s;
+}
+
+.radiobutton-list__input:active + .radiobutton-list__label::before {
+  border-color: $border;
+}
+
+.radiobutton-list__input:checked + .radiobutton-list__label::after {
+  display: block;
+}
+
+
+@media (min-width: $tablet-width) {
+  .radiobutton-list__item {
+    margin-bottom: 58px;
+  }
+
+  .radiobutton-list__label {
+    font-size: $fs-text--big;
+
+    &::before {
+      left: -17px;
+      top: -14px;
+      width: 50px;
+      height: 50px;
+    }
+
+    &::after {
+      left: -1px;
+      top: 2px;
+      width: 18px;
+      height: 18px;
+    }
+  }
 }

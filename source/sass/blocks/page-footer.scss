@@ -17,15 +17,22 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     @include tablet-wrapper;
+    padding-top: 29px;
+    padding-bottom: 28px;
   }
 
   .page-footer__wrapper {
+    @include tablet-content-wrapper;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__copyright {
+    padding-top: 24px;
   }
 }
 
@@ -34,7 +41,12 @@
     width: auto;
   }
 
-  .page-footer__wrappe {
+  .page-footer__wrapper {
     @include desktop-content-wrapper;
+  }
+
+  .page-footer__logo {
+    margin-left: 3px;
+    padding-bottom: 10px;
   }
 }

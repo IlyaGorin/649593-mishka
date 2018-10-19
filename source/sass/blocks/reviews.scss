@@ -1,14 +1,22 @@
 .reviews {
-  width: 270px;
-  margin: 0 auto;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+}
+
+.reviews__wrapper {
   display: flex;
   flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 
   @include font-bold;
   font-size: $fs-title;
@@ -17,16 +25,23 @@
 }
 
 .reviews__btn {
+  align-self: center;
+  min-width: 260px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     @include tablet-wrapper;
+    margin-bottom: 67px;
     padding: 0;
+    padding-top: 78px;
+    padding-bottom: 14px;
 
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/review@1x.jpg") left center no-repeat;
   }
 
   .reviews__wrapper {
@@ -38,6 +53,8 @@
   }
 
   .reviews__title {
+    margin-bottom: 47px;
+
     font-size: $fs-title-tablet--big;
     line-height: 50px;
   }
@@ -53,15 +70,34 @@
   .reviews__btn {
     order: 1;
     margin-left: auto;
+    align-self: flex-start;
+    min-width: 175px;
+    padding-top: 16px;
+    padding-bottom: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    @include desktop-wrapper;
+    @include desktop-content-wrapper;
+    padding-top: 73px;
+    padding-bottom: 64px;
+    margin-bottom: 68px;
   }
 
   .reviews__wrapper {
-    @include desktop-content-wrapper;
+    // margin-left: 174px;
+    width: auto;
+  }
+
+  .reviews__title {
+    margin-left: 174px;
+    margin-bottom: 51px;
+
+    font-size: $fs-title-desktop;
+  }
+
+  .reviews__post {
+    margin-left: 177px;
   }
 }

@@ -1,16 +1,21 @@
 .catalog {
-  width: 270px;
+  width: 260px;
   margin: 0 auto;
+  margin-bottom: 33px;
+  padding-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
     @include tablet-wrapper;
+    padding-top: 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
     @include desktop-wrapper;
+    padding-top: 131px;
+    margin-bottom: 4px;
   }
 }

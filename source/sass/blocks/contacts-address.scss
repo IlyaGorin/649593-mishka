@@ -5,7 +5,7 @@
 .contacts-address__desc {
   width: 150px;
   margin: 0;
-  margin-left: 35px;
+  margin-left: 32px;
 }
 
 .contacts-address__text {
@@ -13,13 +13,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts-address {
+    width: 46%;
+
+    font-size: $fs-text;
+  }
+
   .contacts-address__desc {
-    width: 180px;
+    width: 230px;
+    margin-left: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts-address {
     margin: 0;
+    width: 100%;
   }
 }

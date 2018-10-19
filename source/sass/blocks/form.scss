@@ -1,9 +1,13 @@
 .form {
-  width: 270px;
+  width: 260px;
   margin: 0 auto;
+  padding-top: 21px;
 }
 
 .form__text {
+  margin: 0;
+  margin-bottom: 24px;
+
   @include font-regular;
   font-size: $fs-text--small;
   line-height: 24px;
@@ -13,21 +17,28 @@
 @media (min-width: $tablet-width) {
   .form {
     @include tablet-wrapper;
+    padding-top: 61px;
   }
 
   .form__text {
-    margin-left: 50px;
-    width: 500px;
+    @include tablet-content-wrapper;
+    margin-bottom: 52px;
+
+    font-size: $fs-text;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
+    padding-top: 126px;
     width: auto;
   }
 
   .form__text {
-    @include desktop-content-wrapper;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 52px;
   }
 
   .form__wrapper {

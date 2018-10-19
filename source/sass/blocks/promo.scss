@@ -17,6 +17,12 @@
   background-image: none;
 }
 
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 488px;
+}
+
 .promo__title {
   width: 245px;
   margin: 0 auto;
@@ -30,29 +36,47 @@
   text-align: center;
 }
 
+.promo__title--width {
+  width: auto;
+}
+
 .promo__list {
   margin-top: auto;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    min-height: 744px;
+    position: relative;
 
+    min-height: 744px;
+    padding-top: 153px;
+
+    background: url("../img/hero-tablet@1x.jpg") center center no-repeat;
     background-color: $bg-color;
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: center 0;
 
     border-top: 1px solid $border;
+
+    // &::after {
+    //   content: url("../img/bg-zigzag-fill.svg");
+
+    //   position: absolute;
+    //   bottom: -4px;
+    // }
   }
 
   .promo--background {
     min-height: 238px;
+    padding-top: 95px;
 
     background-image: none;
   }
 
+  .promo__wrapper {
+    min-height: 744px;
+  }
+
   .promo__title {
-    width: 620px;
+    width: 505px;
     margin: 0 auto;
 
     font-size: $fs-title-tablet--big;
@@ -62,13 +86,32 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    padding: 0;
+
     background-color: $bg-color;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center 0;
   }
 
+  .promo__wrapper {
+    @include desktop-content-wrapper;
+    display: flex;
+    flex-direction: column;
+    padding-top: 153px;
+    min-height: 744px;
+  }
+
+  .promo__title {
+    width: 620px;
+
+    font-size: $fs-title-desktop;
+    line-height: 57px;
+  }
+
   .promo--background {
-    min-height: 238px;
+    padding-top: 91px;
+    padding-left: 7px;
+    min-height: 250px;
 
     background-image: none;
   }
