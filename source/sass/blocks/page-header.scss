@@ -14,5 +14,6 @@
 @media (min-width: $desktop-width) {
   .page-header {
     @include desktop-wrapper;
+    padding: 0;
   }
 }

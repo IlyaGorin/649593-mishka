@@ -9,7 +9,8 @@
 }
 
 .catalog-pic__link {
-  padding-left: 28px;
+  margin-left: 27px;
+  margin-bottom: 4px;
 
   @include font-bold;
   font-size: $fs-link;
@@ -19,9 +20,15 @@
   text-decoration: none;
 }
 
+.catalog-pic__link--toys {
+  padding-right: 35px;
+}
+
 .catalog-pic__desc {
-  padding-left: 28px;
   margin: 0;
+  margin-left: 27px;
+  margin-bottom: 19px;
+
 
   @include font-regular;
   font-size: $fs-text--small;
@@ -29,13 +36,101 @@
   color: $text-dark;
 }
 
+.catalog-pic__wrapper {
+  width: 203px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+
+  border-top: 1px solid $border;
+}
+
 .catalog-pic__price {
-  padding-left: 28px;
   margin: 0;
-  margin-top: auto;
 
   @include font-bold;
   font-size: $fs-main;
   line-height: 24px;
   color: $text-black;
+}
+
+.catalog-pic__btn {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-left: auto;
+
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-pic {
+    padding-top: 26px;
+  }
+
+  .catalog-pic__link {
+    padding: 0;
+    padding-right: 50px;
+    margin-left: 27px;
+
+    font-size: $fs-text-tablet;
+  }
+
+  .catalog-pic__link--toys {
+    padding-right: 75px;
+  }
+
+  .catalog-pic__desc {
+    padding: 0;
+    margin-left: 27px;
+    margin-bottom: 176px;
+
+    font-size: $fs-main;
+  }
+
+  .catalog-pic__desc--toys {
+    margin-bottom: 149px;
+  }
+
+  .catalog-pic__wrapper {
+    width: 270px;
+    padding-top: 22px;
+  }
+
+  .catalog-pic__price {
+    font-size: $fs-text;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-pic {
+    padding-top: 29px;
+  }
+
+  .catalog-pic__wrapper {
+    padding-top: 20px;
+    padding-bottom: 27px;
+  }
+
+  .catalog-pic__link {
+    margin-left: 29px;
+  }
+
+  .catalog-pic__desc {
+    margin-bottom: 39px;
+  }
+
+  .catalog-pic__desc--toys {
+    margin-bottom: 15px;
+  }
+
+  .catalog-pic__price {
+    padding-left: 6px;
+  }
+
+  .catalog-pic__btn {
+    padding-right: 36px;
+  }
 }

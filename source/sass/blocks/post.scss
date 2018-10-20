@@ -1,11 +1,11 @@
 .post__item {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .post__text {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   @include font-regular;
   font-size: $fs-main;
@@ -14,11 +14,19 @@
 }
 
 .post__user-name {
+  display: block;
+  margin-bottom: 32px;
+
   @include font-bold;
   font-size: $fs-text;
   line-height: 24px;
   color: $text-black;
   font-style: normal;
+}
+
+.post__user-name b {
+  display: block;
+  margin-bottom: 6px;
 }
 
 .post__user-name a {
@@ -28,9 +36,72 @@
   text-decoration: none;
 }
 
+.post__btn-wrapper {
+  display: flex;
+}
+
+.post__btn {
+  width: 50%;
+  min-height: 52px;
+
+  background-color: $text-white;
+
+  border: none;
+  outline: 1px solid $border;
+  cursor: pointer;
+}
+
+.post__btn--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.post__btn--next {
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: $tablet-width) {
   .post__item {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .post__btn-wrapper {
+    align-self: flex-start;
+    width: 175px;
+    padding-top: 3px;
+  }
+
+  .post__text {
+    margin-bottom: 58px;
+
+    font-size: $fs-text;
+  }
+
+  .post__user-name {
+    margin: 0;
+  }
+
+  .post__user-name b {
+    font-size: $fs-title--small;
+  }
+
+  .post__btn {
+    outline: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__text {
+    padding-right: 86px;
+    margin-bottom: 39px;
+  }
+
+  .post__user-name b {
+    font-size: $fs-text;
+    letter-spacing: 0.1px;
   }
 }

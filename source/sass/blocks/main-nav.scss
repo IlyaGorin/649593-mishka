@@ -7,8 +7,8 @@
 .main-nav__toggle {
   position: absolute;
   z-index: 2;
-  right: 50px;
-  top: 20px;
+  right: 27px;
+  top: 23px;
 
   width: 28px;
   height: 28px;
@@ -16,7 +16,6 @@
   background-color: transparent;
 
   border: none;
-
   cursor: pointer;
 }
 
@@ -39,6 +38,9 @@
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
+    padding: 0;
+    padding-top: 19px;
+    padding-bottom: 16px;
 
     &--logo {
       display: block;
@@ -58,5 +60,11 @@
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    @include desktop-content-wrapper;
   }
 }

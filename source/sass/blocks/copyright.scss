@@ -1,9 +1,14 @@
 .copyright {
   display: flex;
+  align-self: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 26px;
 }
 
 .copyright__text {
   margin: 0;
+  margin-right: 23px;
 
   @include font-bold;
   font-size: $fs-text--big;

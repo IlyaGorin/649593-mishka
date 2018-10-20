@@ -3,20 +3,32 @@
   margin-top: auto;
 }
 
+.promo-list__item {
+  display: block;
+
+  text-decoration: none;
+}
+
 .promo-list__item--interior {
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: 245px center;
   background-color: $bg-green;
 }
 
 .promo-list__item--toys {
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: 235px center;
   background-color: $bg-dark-green;
 }
 
 .promo-list__link {
   display: block;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 30px;
-  // width: 110px;
+  padding-right: 120px;
 
   @include font-bold;
   font-size: $fs-text--big;
@@ -35,7 +47,22 @@
   }
 
   .promo-list__item {
-    flex-grow: 1;
+    width: 50%;
+  }
+
+  .promo-list__item--interior {
+    background-position: 257px center;
+  }
+
+  .promo-list__item--toys {
+    background-position: 241px center;
+  }
+
+  .promo-list__link {
+    padding-left: 36px;
+
+    font-size: $fs-text-tablet;
+    line-height: 30px;
   }
 }
 
@@ -44,5 +71,19 @@
     width: 1050px;
     margin: 0 auto;
     margin-top: auto;
+  }
+
+  .promo-list__link {
+    padding-top: 30px;
+    padding-left: 39px;
+    padding-right: 300px;
+  }
+
+  .promo-list__item--interior {
+    background-position: 452px center;
+  }
+
+  .promo-list__item--toys {
+    background-position: 430px center;
   }
 }

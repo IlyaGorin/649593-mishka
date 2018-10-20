@@ -10,9 +10,21 @@
 }
 
 .card-table tr {
+  height: 41px;
+
   border-bottom: 1px solid $border;
+
+  &:first-child {
+    height: 35px;
+  }
 }
 
 .card-table__field {
   width: 95px;
+}
+
+@media (min-width: $desktop-width) {
+  .card-table tr:first-child {
+    height: 37px;
+  }
 }
