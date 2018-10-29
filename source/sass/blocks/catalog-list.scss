@@ -40,7 +40,7 @@
   }
 
   .catalog-list__item picture {
-    width: 50%;
+    width: 100%;
     margin: 0;
   }
 
@@ -67,6 +67,21 @@
     margin: 0;
     flex-direction: column;
   }
+
+  .catalog-list__item:hover .catalog-list__img {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  .catalog-list__link:hover + .catalog-list__img {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  .catalog-list__link:active + .catalog-list__img {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+
 
   .catalog-list__item picture {
     width: 100%;

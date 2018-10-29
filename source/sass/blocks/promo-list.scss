@@ -4,23 +4,35 @@
 }
 
 .promo-list__item {
+  position: relative;
+
   display: block;
 
   text-decoration: none;
 }
 
 .promo-list__item--interior {
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: 245px center;
   background-color: $bg-green;
 }
 
+.promo-list__item--interior-icon {
+  position: absolute;
+  right: 36px;
+  bottom: 17px;
+
+  fill: rgba($icon-dark-green, $alpha: 0.5);
+}
+
 .promo-list__item--toys {
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  background-position: 235px center;
   background-color: $bg-dark-green;
+}
+
+.promo-list__item--toys-icon {
+  position: absolute;
+  right: 27px;
+  bottom: 24px;
+
+  fill: rgba($icon-dark-green, $alpha: 0.5);
 }
 
 .promo-list__link {
@@ -50,19 +62,19 @@
     width: 50%;
   }
 
-  .promo-list__item--interior {
-    background-position: 257px center;
-  }
-
-  .promo-list__item--toys {
-    background-position: 241px center;
-  }
-
   .promo-list__link {
     padding-left: 36px;
 
     font-size: $fs-text-tablet;
     line-height: 30px;
+  }
+
+  .promo-list__item--interior-icon {
+    bottom: 22px;
+  }
+
+  .promo-list__item--toys-icon {
+    right: 33px;
   }
 }
 
@@ -77,13 +89,35 @@
     padding-top: 30px;
     padding-left: 39px;
     padding-right: 300px;
+
+    &:active {
+      color: rgba($text-white, $alpha: 0.3);
+    }
+  }
+
+  .promo-list__link:active .promo-list__item--toys-icon {
+    fill: rgba($icon-dark-green, $alpha: 0.3);
+  }
+
+  .promo-list__link:active .promo-list__item--interior-icon {
+    fill: rgba($icon-dark-green, $alpha: 0.3);
   }
 
   .promo-list__item--interior {
     background-position: 452px center;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.2s;
+    }
   }
 
   .promo-list__item--toys {
     background-position: 430px center;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.2s;
+    }
   }
 }

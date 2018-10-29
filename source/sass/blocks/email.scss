@@ -3,6 +3,8 @@
 }
 
 .email__wrapper {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -22,10 +24,6 @@
   line-height: 18px;
   color: $text-dark;
 
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: 225px -4px;
-
   border: none;
   border-bottom: 2px solid $text-black;
 
@@ -36,6 +34,14 @@
   &:focus {
     border-color: $bg-green;
   }
+}
+
+.email__icon {
+  position: absolute;
+  right: 4px;
+  top: 32px;
+
+  fill: rgba($text-black, $alpha: 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +70,11 @@
 
     background-color: $bg-gray;
   }
+
+  .email__icon {
+    right: 23px;
+    top: 2px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -84,5 +95,17 @@
     width: 700px;
 
     background-position: 665px 1px;
+  }
+  
+  .email__input:hover + .email__icon {
+    fill: $icon-input;
+  }
+
+  .email__input:focus + .email__icon {
+    fill: $icon-input;
+  }
+
+  .email__icon {
+    right: 180px;
   }
 }

@@ -104,4 +104,27 @@
     font-size: $fs-text;
     letter-spacing: 0.1px;
   }
+
+  .post__btn {
+    &:hover {
+      opacity: 0.6;
+      transition: 0.2s;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .post__user-name a {
+    &:hover {
+      color: $text-green;
+
+      transition: 0.3s;
+    }
+
+    &:active {
+      color: rgba($text-green, $alpha: 0.3);
+    }
+  }
 }

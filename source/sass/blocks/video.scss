@@ -1,4 +1,6 @@
 .video {
+  position: relative;
+
   width: 260px;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -11,9 +13,15 @@
   outline: 1px solid $border;
 }
 
-.video__title {
-  position: relative;
+.video__icon {
+  position: absolute;
+  top: 25px;
+  left: 35px;
 
+  fill: $icon-green;
+}
+
+.video__title {
   margin: 0;
   margin-bottom: 24px;
   padding-left: 25px;
@@ -23,14 +31,6 @@
   font-size: $fs-title--smaller;
   line-height: 24px;
   color: $title-black;
-
-  &::before {
-    content: url("../img/icon-video.svg");
-
-    position: absolute;
-    left: -32px;
-    top: 2px;
-  }
 }
 
 .video__img {
@@ -61,6 +61,16 @@
 
   border: none;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
 }
 
 .video__desc {
@@ -89,6 +99,12 @@
     padding: 0;
     padding-bottom: 44px;
     margin-bottom: 65px;
+  }
+
+  .video__icon {
+    bottom: 219px;
+    left: 41px;
+    top: auto;
   }
 
   .video__title {
@@ -142,13 +158,28 @@
 
 @media (min-width: $desktop-width) {
   .video {
-    position: relative;
-
     @include desktop-content-wrapper;
     align-items: flex-end;
     padding-top: 96px;
     margin-bottom: 108px;
     min-height: 453px;
+
+    &:hover {
+      box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    &:active {
+      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .video__icon {
+    top: 41px;
+    right: 254px;
+    left: auto;
+
+    fill: $icon-green;
   }
 
   .video__title {

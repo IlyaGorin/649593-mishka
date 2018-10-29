@@ -1,0 +1,44 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.modal-form__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @include font-bold;
+  font-size: $fs-title--modal;
+  line-height: 57px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.modal-form__text {
+  margin-bottom: 25px;
+
+  @include font-regular;
+  font-size: $fs-text;
+  line-height: 30px;
+  color: $text-dark;
+}
+
+.modal-form__list {
+  margin-bottom: 25px;
+}
+
+.modal-form__btn {
+  align-self: stretch;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $text-white;
+
+  background-color: $bg-green;
+  
+  cursor: pointer;
+  border: none;
+}
