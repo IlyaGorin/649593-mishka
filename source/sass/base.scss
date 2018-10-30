@@ -36,7 +36,7 @@ img {
   @include button;
 
   &:hover {
-    background-color:$bg-button;
+    background-color: $bg-button;
 
     color: $text-white;
 

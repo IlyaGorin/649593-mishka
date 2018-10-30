@@ -1,6 +1,6 @@
 .form-list {
   @include list-style;
-  display:flex;
+  display: flex;
 }
 
 .form-list__item {
@@ -11,7 +11,7 @@
   align-items: center;
   width: 112px;
   height: 52px;
-  
+
   margin-right: 7px;
 
   &:last-child {
@@ -42,7 +42,7 @@
 }
 
 .form-list__checkbox:hover + .form-list__label::before {
-  border-color:rgba($border-modal--hover, $alpha: 0.3);
+  border-color: rgba($border-modal--hover, $alpha: 0.3);
 }
 
 .form-list__checkbox:checked + .form-list__label::before {

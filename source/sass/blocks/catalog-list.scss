@@ -69,17 +69,17 @@
   }
 
   .catalog-list__item:hover .catalog-list__img {
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     transition: 0.3s;
   }
 
   .catalog-list__link:hover + .catalog-list__img {
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     transition: 0.3s;
   }
 
   .catalog-list__link:active + .catalog-list__img {
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 
 

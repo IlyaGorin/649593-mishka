@@ -27,7 +27,7 @@
   fill: $icon-green;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .copyright {
     padding-top: 34px;
   }
@@ -46,7 +46,7 @@
     }
   }
 
-  .copyright__link:hover .copyright__icon{
+  .copyright__link:hover .copyright__icon {
     fill: $icon-footer;
   }
 

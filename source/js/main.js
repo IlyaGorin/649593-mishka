@@ -17,7 +17,7 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-///Модалка на главной 
+///Модалка на главной
 
 if (modalLink) {
   modalLink.addEventListener('click', function (evt) {
@@ -27,7 +27,7 @@ if (modalLink) {
   })
 }
 
-// Модалка в каталоге 
+// Модалка в каталоге
 
 if (modalLinkCatalog) {
   for (var i = 0; i < modalLinkCatalog.length; i++) {
@@ -39,7 +39,7 @@ if (modalLinkCatalog) {
   };
 };
 
-//Закрытие модалки 
+//Закрытие модалки
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
