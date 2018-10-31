@@ -87,7 +87,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     @include desktop-content-wrapper;
-    padding-top: 73px;
+    padding-top: 75px;
     padding-bottom: 64px;
     margin-bottom: 68px;
   }
@@ -106,5 +106,9 @@
 
   .reviews__post {
     margin-left: 177px;
+  }
+
+  .reviews__btn {
+    margin-top: 3px;
   }
 }

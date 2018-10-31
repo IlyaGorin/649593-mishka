@@ -34,4 +34,16 @@ img {
 
 .btn {
   @include button;
+
+  &:hover {
+    background-color: $bg-button;
+
+    color: $text-white;
+
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: rgba($text-white, $alpha: 0.3);
+  }
 }

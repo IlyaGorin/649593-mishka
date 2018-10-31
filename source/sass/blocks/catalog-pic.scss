@@ -59,10 +59,21 @@
   width: 22px;
   height: 22px;
   margin-left: auto;
+}
 
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.catalog-pic__btn:hover .catalog-pic__icon {
+  fill: $icon-green;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.catalog-pic__btn:active .catalog-pic__icon {
+  opacity: 0.3;
+}
+
+.catalog-pic__icon {
+  fill: $icon-color;
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {
@@ -116,6 +127,14 @@
 
   .catalog-pic__link {
     margin-left: 29px;
+
+    &:hover {
+      color: rgba($text-black, $alpha: 0.6);
+    }
+
+    &:active {
+      color: rgba($text-black, $alpha: 0.3);
+    }
   }
 
   .catalog-pic__desc {
@@ -131,6 +150,6 @@
   }
 
   .catalog-pic__btn {
-    padding-right: 36px;
+    padding-right: 29px;
   }
 }

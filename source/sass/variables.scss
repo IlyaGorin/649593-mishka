@@ -4,9 +4,19 @@ $bg-dark-green:#56c3b2;
 $bg-green: #63d1bb;
 $bg-gray: #f1f1f1;
 $bg-color: #fafafa;
+$bg-button: #444444;
+
+$icon-green: #63d1bb;
+$icon-color: #221f1f;
+$icon-dark-green: #149080;
+$icon-footer: #46c1ae;
+$icon-input: #62d1ba;
 
 $border: #ececec;
 $border-footer: #e5e5e5;
+$border-modal: #c6c6c6;
+$border-green: #63d1bb;
+$border-modal--hover: #444444;
 
 $title-green: #63d1bb;
 $title-black: #000000;
@@ -14,6 +24,7 @@ $title-black: #000000;
 $text-black:#000000;
 $text-dark: #444444;
 $text-white: #ffffff;
+$text-green: #63d1bb;
 
 $text-placeholder: rgba(68, 68, 68, 0.3);
 
@@ -25,6 +36,7 @@ $fs-title: 25px;
 $fs-title--big: 27px;
 $fs-title--small: 18px;
 $fs-title--smaller: 17px;
+$fs-title--modal: 30px;
 
 $fs-main: 15px;
 
@@ -35,7 +47,6 @@ $fs-text--small: 13px;
 
 $fs-link: 17px;
 $fs-link--big: 18px;
-
 
 //
 $tablet-width: 768px;
