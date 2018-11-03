@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title>Форма заказа товара</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <!-- Спрайт Svg -->
-  <svg style="display:none">
+  <!-- <svg style="display:none">
     <symbol viewBox="-0.8 -0.8 20 20" id="icon-search">
       <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
     </symbol>
@@ -117,8 +117,10 @@
     <symbol viebox ="0 0 32 32" id="icon-mail">
       <path d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
     </symbol>
-  </svg>
-
+  </svg> -->
+  <div style="display:none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -204,11 +206,11 @@
             <h3 class="checkbox-group__title fieldset-title">цвет</h3>
             <ul class="checkbox-group__list checkbox-list">
               <li class="checkbox-list__item">
-                <input type="checkbox" name="color-white" value="white" id="white-id" class="checkbox-list__input visually-hidden" checked>
+                <input type="checkbox" name="color-white" value="white" id="white-id" class="checkbox-list__input visually-hidden" checked="">
                 <label for="white-id" class="checkbox-list__label">Белый</label>
               </li>
               <li class="checkbox-list__item">
-                <input type="checkbox" name="color-gray" value="gray" id="gray-id" class="checkbox-list__input visually-hidden" checked>
+                <input type="checkbox" name="color-gray" value="gray" id="gray-id" class="checkbox-list__input visually-hidden" checked="">
                 <label for="gray-id" class="checkbox-list__label">Серый</label>
               </li>
               <li class="checkbox-list__item">
