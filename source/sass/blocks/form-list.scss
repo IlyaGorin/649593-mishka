@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 112px;
+  width: 82px;
   height: 52px;
 
   margin-right: 7px;
@@ -35,7 +35,7 @@
     left: 0;
     top: 0;
 
-    width: 112px;
+    width: 82px;
     height: 52px;
     border: 2px solid $border;
   }
@@ -47,4 +47,16 @@
 
 .form-list__checkbox:checked + .form-list__label::before {
   border-color: $border-green;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list__item {
+    width: 112px;
+    height: 52px;
+  }
+
+  .form-list__label::before {
+    width: 112px;
+    height: 52px;
+  }
 }

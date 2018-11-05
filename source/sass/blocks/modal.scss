@@ -5,8 +5,8 @@
   top: 200px;
 
   display: none;
-  width: 568px;
-  margin-left: -284px;
+  width: 320px;
+  margin-left: -160px;
   padding-top: 49px;
   padding-bottom: 46px;
 
@@ -20,4 +20,11 @@
 
 .modal--show {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 568px;
+    margin-left: -284px;
+  }
 }
