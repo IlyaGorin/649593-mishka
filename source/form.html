@@ -5,8 +5,8 @@
   <title>Форма заказа товара</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="fonts">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="fonts">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
@@ -39,7 +39,7 @@
         </li>
         <li class="site-list__item site-list__item--search">
           <a href="#" class="site-list__link site-list__link--search">
-            <svg class="site-list__link--search-icon" width="20" height="20">
+            <svg class="site-list__search-icon" width="20" height="20">
               <use xlink:href="#icon-search"></use>
             </svg>
             Поиск по сайту
@@ -47,7 +47,7 @@
         </li>
         <li class="site-list__item site-list__item--basket">
           <a href="#" class="site-list__link site-list__link--basket">
-            <svg class="site-list__link--basket-icon" width="21" height="21">
+            <svg class="site-list__basket-icon" width="21" height="21">
               <use xlink:href="#icon-cart"></use>
             </svg>
             Корзина: пока пуста
@@ -85,7 +85,7 @@
           <h3 class="radiobutton-group__title fieldset-title">тип</h3>
           <ul class="radiobutton-group__list radiobutton-list">
             <li class="radiobutton-list__item">
-              <input type="radio" name="type" value="interior-accessory" id="accessory" class="radiobutton-list__input visually-hidden">
+              <input type="radio" name="type" value="interior-accessory" id="accessory" class="radiobutton-list__input visually-hidden" checked>
               <label for="accessory" class="radiobutton-list__label">Аксессуар для интерьера</label>
             </li>
             <li class="radiobutton-list__item">
@@ -130,22 +130,22 @@
           <div class="information__wrapper">
             <p class="information__item">
               <label for="username-id" class="information__label">Имя:</label>
-              <input type="text" name="username" id="username-id" class="information__input" placeholder="Введите ваше имя*">
+              <input type="text" name="username" id="username-id" class="information__input" placeholder="Введите ваше имя*" required>
             </p>
             <p class="information__item">
               <label for="surname-id" class="information__label">Фамилия:</label>
-              <input type="text" name="surname" id="surname-id" class="information__input" placeholder="Укажите фамилию*">
+              <input type="text" name="surname" id="surname-id" class="information__input" placeholder="Укажите фамилию*" required>
             </p>
             <p class="information__item">
               <label for="patronymic-id" class="information__label">Отчество:</label>
-              <input type="text" name="patronymic" id="patronymic-id" class="information__input" placeholder="Отчество, если желаете">
+              <input type="text" name="patronymic" id="patronymic-id" class="information__input" placeholder="Отчество, если желаете" required>
             </p>
           </div>
         </div>
         <div class="order-form__phone phone">
           <div class="phone__wrapper">
             <label for="phone-id" class="phone__title fieldset-title">тел</label>
-            <input type="tel" name="phone" id="phone-id" class="phone__input" placeholder="+7 XXX XXX XX XX*">
+            <input type="tel" name="phone" id="phone-id" class="phone__input" placeholder="+7 XXX XXX XX XX*" required>
             <svg class="phone__icon" width="24" height="24">
               <use xlink:href="#icon-phone"></use>
             </svg>
@@ -154,7 +154,7 @@
         <div class="order-form__email email">
           <div class="email__wrapper">
             <label for="email-id" class="email__title fieldset-title">e-mail</label>
-            <input type="email" name="email" id="email-id" class="email__input" placeholder="Ваш Email*">
+            <input type="email" name="email" id="email-id" class="email__input" placeholder="Ваш Email*" required>
             <svg class="email__icon" width="32" height="32">
               <use xlink:href="#icon-mail"></use>
             </svg>

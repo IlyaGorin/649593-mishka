@@ -5,8 +5,8 @@
   <title>Каталог товаров</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="fonts">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="fonts">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
@@ -40,7 +40,7 @@
         </li>
         <li class="site-list__item site-list__item--search">
           <a href="#" class="site-list__link site-list__link--search">
-            <svg class="site-list__link--search-icon" width="20" height="20">
+            <svg class="site-list__search-icon" width="20" height="20">
               <use xlink:href="#icon-search"></use>
             </svg>
             Поиск по сайту
@@ -48,7 +48,7 @@
         </li>
         <li class="site-list__item site-list__item--basket">
           <a href="#" class="site-list__link site-list__link--basket">
-            <svg class="site-list__link--basket-icon" width="21" height="21">
+            <svg class="site-list__basket-icon" width="21" height="21">
               <use xlink:href="#icon-cart"></use>
             </svg>
             Корзина: пока пуста
@@ -230,15 +230,15 @@
       <span class="modal-form__text">Выберите размер:</span>
       <ul class="modal-form__list form-list">
         <li class="form-list__item">
-          <input type="checkbox" name="size-small" value="small" id="small-id" class="form-list__checkbox visually-hidden" checked="">
+          <input type="radio" name="size" value="small" id="small-id" class="form-list__radio visually-hidden" checked="">
           <label for="small-id" class="form-list__label">S</label>
         </li>
         <li class="form-list__item">
-          <input type="checkbox" name="size-medium" value="medium" id="medium-id" class="form-list__checkbox visually-hidden">
+          <input type="radio" name="size" value="medium" id="medium-id" class="form-list__radio visually-hidden">
           <label for="medium-id" class="form-list__label">M</label>
         </li>
         <li class="form-list__item">
-          <input type="checkbox" name="size-large" value="large" id="large-id" class="form-list__checkbox visually-hidden">
+          <input type="radio" name="size" value="large" id="large-id" class="form-list__radio visually-hidden">
           <label for="large-id" class="form-list__label">L</label>
         </li>
       </ul>

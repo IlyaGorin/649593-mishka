@@ -41,14 +41,14 @@
     padding: 0;
     padding-top: 19px;
     padding-bottom: 16px;
+  }
 
-    &--logo {
-      display: block;
-    }
+  .main-nav--closed .site-list__item--logo {
+    display: block;
   }
 
   .main-nav--nojs .main-nav__toggle {
-    display: block;
+    display: none;
   }
 }
 

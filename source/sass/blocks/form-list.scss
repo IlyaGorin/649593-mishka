@@ -41,11 +41,11 @@
   }
 }
 
-.form-list__checkbox:hover + .form-list__label::before {
+.form-list__radio:hover + .form-list__label::before {
   border-color: rgba($border-modal--hover, $alpha: 0.3);
 }
 
-.form-list__checkbox:checked + .form-list__label::before {
+.form-list__radio:checked + .form-list__label::before {
   border-color: $border-green;
 }
 

@@ -5,10 +5,10 @@
   <title>Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="fonts">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="fonts">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <script src="js/picturefill.min.js" async></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<96e0b368-4d42-4d3f-ac7e-2af9160e468a>&lang=ru_RU" type="text/javascript">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=96e0b368-4d42-4d3f-ac7e-2af9160e468a&lang=ru_RU" type="text/javascript">
   </script>
 </head>
 <body>
@@ -17,7 +17,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--logo">
@@ -41,7 +41,7 @@
         </li>
         <li class="site-list__item site-list__item--search">
           <a href="#" class="site-list__link site-list__link--search">
-            <svg class="site-list__link--search-icon" width="20" height="20">
+            <svg class="site-list__search-icon" width="20" height="20">
               <use xlink:href="#icon-search"></use>
             </svg>
             Поиск по сайту
@@ -49,7 +49,7 @@
         </li>
         <li class="site-list__item site-list__item--basket">
           <a href="#" class="site-list__link site-list__link--basket">
-            <svg class="site-list__link--basket-icon" width="21" height="21">
+            <svg class="site-list__basket-icon" width="21" height="21">
               <use xlink:href="#icon-cart"></use>
             </svg>
             Корзина: пока пуста
@@ -80,7 +80,7 @@
           <li class="promo-list__item promo-list__item--interior">
             <a href="#" class="promo-list__link">
               Предметы интерьера
-              <svg class="promo-list__item--interior-icon" width="40" height="62">
+              <svg class="promo-list__interior-icon" width="40" height="62">
                 <use xlink:href="#icon-interior"></use>
               </svg>
             </a>
@@ -88,7 +88,7 @@
           <li class="promo-list__item promo-list__item--toys">
             <a href="#" class="promo-list__link">
               Детские игрушки
-              <svg class="promo-list__item--toys-icon" width="60" height="60">
+              <svg class="promo-list__toys-icon" width="60" height="60">
                 <use xlink:href="#icon-toy"></use>
               </svg>
             </a>
@@ -271,15 +271,15 @@
       <span class="modal-form__text">Выберите размер:</span>
       <ul class="modal-form__list form-list">
         <li class="form-list__item">
-          <input type="checkbox" name="size-small" value="small" id="small-id" class="form-list__checkbox visually-hidden" checked="">
+          <input type="radio" name="size" value="small" id="small-id" class="form-list__radio visually-hidden" checked>
           <label for="small-id" class="form-list__label">S</label>
         </li>
         <li class="form-list__item">
-          <input type="checkbox" name="size-medium" value="medium" id="medium-id" class="form-list__checkbox visually-hidden">
+          <input type="radio" name="size" value="medium" id="medium-id" class="form-list__radio visually-hidden">
           <label for="medium-id" class="form-list__label">M</label>
         </li>
         <li class="form-list__item">
-          <input type="checkbox" name="size-large" value="large" id="large-id" class="form-list__checkbox visually-hidden">
+          <input type="radio" name="size" value="large" id="large-id" class="form-list__radio visually-hidden">
           <label for="large-id" class="form-list__label">L</label>
         </li>
       </ul>
