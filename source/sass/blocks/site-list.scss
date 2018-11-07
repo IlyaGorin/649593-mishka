@@ -30,7 +30,7 @@
   font-size: $fs-link;
 }
 
-.site-list__link--search-icon {
+.site-list__search-icon {
   position: absolute;
   left: 33px;
   top: 32px;
@@ -43,7 +43,7 @@
   position: relative;
 }
 
-.site-list__link--basket-icon {
+.site-list__basket-icon {
   position: absolute;
   left: 30px;
   top: 28px;
@@ -99,8 +99,8 @@
     border-left: 1px solid $border;
   }
 
-  .site-list__link--search-icon {
-    top: 38px;
+  .site-list__search-icon {
+    top: 35px;
   }
 
   .site-list__item--basket {
@@ -110,7 +110,7 @@
     border-left: 1px solid $border;
   }
 
-  .site-list__link--basket-icon {
+  .site-list__basket-icon {
     top: 34px;
   }
 
@@ -225,17 +225,19 @@
     justify-content: center;
   }
 
-  .site-list__link--search-icon {
+  .site-list__search-icon {
+    top: 33px;
+
     fill: $icon-color;
     opacity: 0.2;
   }
 
-  .site-list__link--search:hover .site-list__link--search-icon {
+  .site-list__link--search:hover .site-list__search-icon {
     fill: $icon-green;
     opacity: 1;
   }
 
-  .site-list__link--search:active .site-list__link--search-icon {
+  .site-list__link--search:active .site-list__search-icon {
     opacity: 0.3;
   }
 
@@ -249,17 +251,17 @@
     padding-top: 30px;
   }
 
-  .site-list__link--basket:hover .site-list__link--basket-icon {
+  .site-list__link--basket:hover .site-list__basket-icon {
     fill: $icon-green;
     opacity: 1;
     transition: 0.4s;
   }
 
-  .site-list__link--basket:active .site-list__link--basket-icon {
+  .site-list__link--basket:active .site-list__basket-icon {
     opacity: 0.3;
   }
 
-  .site-list__link--basket-icon {
+  .site-list__basket-icon {
     top: 31px;
 
     fill: $icon-color;

@@ -15,7 +15,7 @@
   background-color: $bg-green;
 }
 
-.promo-list__item--interior-icon {
+.promo-list__interior-icon {
   position: absolute;
   right: 36px;
   bottom: 17px;
@@ -27,7 +27,7 @@
   background-color: $bg-dark-green;
 }
 
-.promo-list__item--toys-icon {
+.promo-list__toys-icon {
   position: absolute;
   right: 27px;
   bottom: 24px;
@@ -69,11 +69,11 @@
     line-height: 30px;
   }
 
-  .promo-list__item--interior-icon {
+  .promo-list__interior-icon {
     bottom: 22px;
   }
 
-  .promo-list__item--toys-icon {
+  .promo-list__toys-icon {
     right: 33px;
   }
 }
@@ -95,11 +95,11 @@
     }
   }
 
-  .promo-list__link:active .promo-list__item--toys-icon {
+  .promo-list__link:active .promo-list__toys-icon {
     fill: rgba($icon-dark-green, $alpha: 0.3);
   }
 
-  .promo-list__link:active .promo-list__item--interior-icon {
+  .promo-list__link:active .promo-list__interior-icon {
     fill: rgba($icon-dark-green, $alpha: 0.3);
   }
 
